@@ -44,3 +44,31 @@ function suma():void{
     calcular(nuevaMascota,5)
     nuevaMascota.mostrarEdad()
     console.log(multiplicar(3,0,2))
+//funciones anonimas
+const funcSumar = function(valor1:number,valor2:number):number{
+    return valor1+valor2;
+}
+console.log(funcSumar(4,5))
+
+//funcion con parametros opcionales
+function calcularParamOp(n1:number, n2:number, n3?:number):number{
+    if(n3){
+        return n1+n2+n3;
+    }else{
+        return n1+n2;
+    }
+}
+console.log(calcularParamOp(3,2,5))
+console.log(calcularParamOp(3,2))
+
+//Parametros REST en funciones
+function calcular2(...valores:number[]):number{
+    let suma=0;
+    for(let x=0;x<valores.length;x++){
+        suma+=valores[x];
+    }
+    return suma;
+}
+
+console.log(calcular2(10,2,3,4))
+console.log(calcular2(1,2))

@@ -6,7 +6,11 @@ import { setupCounter } from './counter.ts'
 
 import './temasts/01-tiposDatos.ts'
 //import './temasts/02-interfaz-arre.ts'
-import './temasts/03-funciones.ts'
+//import './temasts/03-funciones.ts'
+//import './temasts/04-desestructuracion-obj.ts'
+//import './temasts/05-clases.ts'
+//import './temasts/06-herencia.ts'
+import './temasts/07-genericos.ts'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
